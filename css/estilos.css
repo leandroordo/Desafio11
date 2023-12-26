@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #4c7b9d;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-image: url("./img/ciudad.png");
+  background-repeat: no-repeat;
+  background-position: 0% 100%;
+  background-attachment: fixed;
+  background-size:contain;
+}
+
+body {
+  margin: 150px auto 500px auto;
+  width: 80%;
+  text-align: center;
+  background-color: #acdadc;
+  border-radius: 12px;
+  box-shadow: inset 2px 2px 8px 0px rgba(0,0,0,0.3);
+  padding: 3rem;
+  color: #213557;
+}
+
+body::after {
+  content: "";
+  display: block;
+  background-image: url("./img/gato.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 491px;
+  position: absolute;
+  left: 0;
+}
+
+xh1 {
+  position: absolute;
+  top: -150px;
+  left: calc(-20%);
+  width: 100vw;
+  background-color: #df3448;
+  padding: 22px 0;
+  text-align: center;
+  font-family: 'Lobster', sans-serif;
+  font-size: 52px;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+h1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: #df3448;
+  padding: 22px 0;
+  text-align: center;
+  font-family: 'Lobster', sans-serif;
+  font-size: 52px;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+}
+
+h2 {
+  font-family: 'Lobster', sans-serif;
+  font-size: 2.6rem;
+  color: #df3448;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+h2+p {
+  font-style: italic;
+  text-align: center;
+  font-size: 1.7rem;
+}
+h2+p::before {
+  content: "-";
+}
+h2+p::after {
+  content: "-";
+}
+
+p {
+  font-size: 1.3rem;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+p:not(h1 ~ p:first-of-type)::first-letter {
+  font-family: 'Lobster', sans-serif;
+  font-size: 2.5rem;
+}
